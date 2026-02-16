@@ -21,7 +21,7 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
 
-            - name: Deploy to Surge
+      - name: Deploy to Surge
         run: surge --project ./ --domain chanisafung.surge.sh
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
