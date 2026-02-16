@@ -1,14 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Parcial CI</title>
-</head>
-<body>
-    <h1>Hola Integración Continua </h1>
-    <p>Primer parcial funcionando</p>
+    <title>Mi Página Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>Prueba final automática 🚀</p>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd369;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            max-width: 500px;
+        }
+
+        .card h2 {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #ffd369;
+            color: #333;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.2);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mi Proyecto Web 🚀</h1>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Acerca</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<main>
+    <div class="card">
+        <h2>¡Bienvenidos!</h2>
+        <p>
+            Esta página está desplegada automáticamente con GitHub Actions y Surge.
+        </p>
+        <a href="#" class="btn">Explorar</a>
+    </div>
+</main>
+
+<footer>
+    © 2026 - Desarrollado por Isabel Rodríguez
+</footer>
 
 </body>
 </html>
