@@ -1,125 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Página Web</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Espacio Web</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #4a4a4a;
+    }
 
-        body {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+    .container {
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        max-width: 400px;
+    }
 
-        header {
-            padding: 20px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-        }
+    h1 {
+        margin-bottom: 15px;
+        color: #d46a92;
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-        }
+    p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
 
-        nav {
-            margin-top: 10px;
-        }
+    button {
+        background-color: #d46a92;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.3s;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #ffd369;
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
-            border-radius: 15px;
-            backdrop-filter: blur(15px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            max-width: 500px;
-        }
-
-        .card h2 {
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #ffd369;
-            color: #333;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: white;
-            transform: scale(1.05);
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: rgba(0,0,0,0.2);
-            font-size: 0.9rem;
-        }
-    </style>
+    button:hover {
+        background-color: #b9547b;
+        transform: scale(1.05);
+    }
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Mi Proyecto Web 🚀</h1>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Acerca</a>
-        <a href="#">Contacto</a>
-    </nav>
-</header>
-
-<main>
-    <div class="card">
-        <h2>¡Bienvenidos!</h2>
-        <p>
-            Esta página está desplegada automáticamente con GitHub Actions y Surge.
-        </p>
-        <a href="#" class="btn">Explorar</a>
-    </div>
-</main>
-
-<footer>
-    © 2026 - Desarrollado por Isabel Rodríguez
-</footer>
+<div class="container">
+    <h1>Bienvenid@</h1>
+    <p>Este es mi despliegue en surge.</p>
+    <button>Explorar</button>
+</div>
 
 </body>
 </html>
